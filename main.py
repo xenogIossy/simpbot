@@ -1,3 +1,11 @@
+import os
+
+routes = []
+
+for path in os.listdir(os.getcwd()):
+    routes.append(path)
+
+assert "config.py" in routes
 import discord
 from config import token
 from discord.ext import commands
