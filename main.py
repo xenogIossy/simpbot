@@ -1,8 +1,7 @@
 import discord
-import config
+from config import token
 from discord.ext import commands
 
-token = config.token
 intents = discord.Intents().all()
 bot = commands.Bot(command_prefix='!', intents=intents)
 
