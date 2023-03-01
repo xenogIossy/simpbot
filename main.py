@@ -10,6 +10,7 @@ import discord
 from config import token
 from discord.ext import commands
 
+token = os.environ["token"]
 intents = discord.Intents().all()
 bot = commands.Bot(command_prefix='!', intents=intents)
 
